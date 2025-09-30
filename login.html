@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Login Page</title>
+  </head>
+  
+  <body>
+    <video id="fundo" src="imagens/minecraft-sunset.3840x2160.mp4" autoplay muted loop></video>
+      <header>
+        <nav>
+          <div class="logo">
+            <img src="" alt="" />
+          </div>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+    <main class="body">
+    
+        <div class="welcome-message">
+            <h2>Welcome to Our Website!</h2>
+            <p>Please sign in to access your account and enjoy our services.</p>
+            <a href="#"><button class="learn">Learn more</button></a>
+      </div>
+      <div class="login-container">
+          <h1>Sign In</h1>
+          <form action="/register" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+            <br />
+            <button type="submit">Submit</button>
+            <p>If you don't have an account, <a href="#">Sign up</a></p>
+            <div class="media-icons">
+              <div id="facebook"><a href=""><img src="imagens/facebook-svgrepo-com.svg" alt=""></a></div>
+             <a href="">
+               <div id="whatsapp"><img src="imagens/whatsapp-svgrepo-com.svg" alt=""></div>
+             </a>
+             <div id="instagram"><a href=""><img src="imagens/instagram-svgrepo-com.svg"  alt=""></a></div>
+            </div>
+          </form>
+      </div>
+     
+  </body>
+</html>
+

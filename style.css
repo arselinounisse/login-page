@@ -1,0 +1,281 @@
+@charset "UTF-8";
+@keyframes water {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@media (max-width: 768px) {
+  .body {
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+  }
+  .welcome-message {
+    margin: 0;
+    padding: 20px;
+  }
+  .login-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@font-face {
+    font-family: playfair;
+    src: url(fontes/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: roboto-semibold;
+    src: url(fontes/Roboto/Roboto-SemiBold.ttf);
+}
+@font-face {
+    font-family: roboto-regular;
+    src: url(fontes/Roboto/static/Roboto-Bold.ttf);
+}
+#fundo{
+   position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Fica atrás do conteúdo */
+}
+body {
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.body {
+    align-items: center;
+    height: 100vh;
+    backdrop-filter: blur(2px);
+    background: #847f7f00;
+    display: flex;
+    width: 750px;
+    height: 450px;
+    margin-top: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+   font-family: roboto-regular;
+   align-items: center;
+}
+.body:hover{
+    transform: scale(1.01);
+   transition: 0.3s ease;
+   box-shadow: 0 0 15px rgba(199, 121, 13, 0.781);
+}
+.login-container{
+    background: #33333354;
+    box-shadow: 0 0 10px rgba(51, 51, 51, 0.5);
+    padding: 20px;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-size: cover;
+    color: white;
+    margin-right: 10px;
+}
+.login-container:hover{
+    transform: scale(1.05);
+   transition: 0.3s ease;
+   box-shadow: 0 0 15px rgba(173, 206, 24, 0.781);
+}
+label{
+    display: block;
+    text-align: start;
+    margin-top: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: white;
+    font-family: roboto-regular;
+    
+}
+#username{
+    font-family: roboto-semibold;
+    border-radius: 20px;
+    width: 200px;
+    height: 20px;
+    margin-bottom: 20px;
+    color: black;
+    border: #33333354;
+    padding-left: 20px;
+    background-color: #ffffff54;
+}
+#username:focus, #password:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(206, 24, 24, 0.781);
+    border: 1px solid rgba(206, 24, 24, 0.781);
+    background-color: #ffffff;
+}
+#password{
+    width: 200px;
+    height: 20px;
+    border-radius: 20px;
+    padding: auto 10px auto 10px;
+    border: #33333354;
+    margin-bottom: 20px;
+    
+    padding-left: 20px;
+    background-color: #ffffff54;
+}
+button{
+    margin-top: 5px;
+    border: solid 1px #33333354;
+    border-radius: 20px;
+    padding: 10px 50px;
+}
+button:hover{
+    background-color: rgba(190, 41, 41, 0.838);
+    color: white;
+}
+
+.learn {
+    background-image: linear-gradient(to right, rgb(222, 152, 22), rgba(206, 24, 24, 0.781));
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.welcome-message {
+    margin-bottom: 20px;
+    color: white;
+    margin-right: 50px;
+    padding: 50px;
+}
+a {
+    color: #00ff2a;
+    text-decoration: solid;
+}
+.media-icons{
+    justify-items: center;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 30px;
+    height: 50px;
+    margin-top: 10px;
+}
+.media-icons img{
+    width: 45px;
+    height: 35px;
+    filter: invert(1);
+    border-radius: 80px;
+    padding: 5px;
+ 
+}
+
+#whatsapp{
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+}
+#whatsapp:hover{
+  background-color: #00ff2a;
+}
+#facebook{
+    width: auto;
+  height: auto;
+  border-radius: 50%;
+}
+#facebook:hover{
+background-color: rgb(12, 12, 226);
+}
+#instagram{
+    width: auto;
+  height: auto;
+  border-radius: 50%;
+}
+#instagram:hover{
+background: linear-gradient(45deg, #405DE6, #833AB4, #E1306C, #FD1D1D, #FCAF45);
+
+}
+h1, h2 {
+    font-family: playfair;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}
+
+header {
+ color: black;
+  width: 100%;         /* ocupa toda a largura */
+  height: 80px;        /* altura fixa */
+  position: fixed;     /* fica fixo no topo */
+  top: 0;              /* cola no topo */
+  left: 0;             /* cola na esquerda */
+  display: flex;       /* organiza os itens em linha */
+  align-items: center; /* centraliza verticalmente */
+  justify-content: space-between;
+  padding: 0 20px;     /* espaço interno lateral */   
+  margin-bottom: 40px; 
+}
+header ul {
+  list-style: none;   /* remove bolinhas */
+  display: flex;      /* deixa em linha */
+  gap: 20px;          /* espaçamento entre itens */
+  margin: 0;
+  padding: 0;
+}
+
+header ul li a{
+    color: rgb(222, 235, 235);
+}
+header ul li {
+  
+  border-radius: 80px;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+    
+    background: rgba(255, 255, 255, 0.2); /* transparente esbranquiçado */
+    backdrop-filter: blur(10px); /* efeito vidro / água */
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 
+    inset 2px 2px 5px rgba(255, 255, 255, 0.6),  /* reflexo interno */
+    inset -2px -2px 5px rgba(0, 0, 0, 0.2),     /* sombra interna */
+    0 8px 20px rgba(0, 0, 0, 0.3); 
+    cursor: pointer;
+  transition: all 0.3s ease;
+    
+    
+}
+
+header ul li:hover{
+     transform: scale(1.1); /* cresce levemente */
+  box-shadow: 
+    inset 2px 2px 6px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 6px rgba(0, 0, 0, 0.25),
+    0 10px 25px rgba(0, 0, 0, 0.4);
+}
+/*.main-title {
+  font-size: 48px;
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(0, 150, 255, 0.8), 
+               0 0 30px rgba(0, 200, 255, 0.6);
+  margin-bottom: 20px;
+  text-align: center;
+}
